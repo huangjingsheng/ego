@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <system systemId="http://www.springframework.org/schema/beans/spring-beans.xsd" uri="file:///D:/dtd/spring-beans-4.1.xsd"/>
+  <system systemId="http://www.springframework.org/schema/context/spring-context.xsd" uri="file:///D:/dtd/spring-context-4.1.xsd"/>
+  <system systemId="http://code.alibabatech.com/schema/dubbo/dubbo.xsd" uri="file:///D:/dtd/dubbo.xsd"/>
+  <system systemId="http://www.springframework.org/schema/aop/spring-aop.xsd" uri="file:///D:/dtd/spring-aop-4.1.xsd"/>
+  <system systemId="http://www.springframework.org/schema/tx/spring-tx.xsd" uri="file:///D:/dtd/spring-tx-4.1.xsd"/>
+</catalog>

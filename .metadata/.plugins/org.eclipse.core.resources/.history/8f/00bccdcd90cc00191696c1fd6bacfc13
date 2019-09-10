@@ -1,0 +1,7 @@
+package com.ego.manage.service.impl;
+
+import com.ego.manage.service.TbItemParamService;
+
+public class TbItemParamServiceImpl implements TbItemParamService{
+
+}

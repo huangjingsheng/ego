@@ -1,0 +1,6 @@
+package com.ego.manage.controller;
+
+@Controller
+public class TbItemParamController {
+	
+}

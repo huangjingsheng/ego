@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+E:\ego\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+620641524.index
+2448352735.index
+3542621933.index
+2834163627.index
+1860354631.index
+2325045412.index
