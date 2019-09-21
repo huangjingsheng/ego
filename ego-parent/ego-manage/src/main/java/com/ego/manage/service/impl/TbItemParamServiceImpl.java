@@ -19,4 +19,12 @@ public class TbItemParamServiceImpl implements TbItemParamService{
 		return teItemParamDubboService.showPage(page, rows);
 	}
 
+	@Override
+	public boolean delByIds(String ids) throws Exception {
+		// TODO Auto-generated method stub
+		return teItemParamDubboService.delByIds(ids);
+	}
+	
+	
+
 }

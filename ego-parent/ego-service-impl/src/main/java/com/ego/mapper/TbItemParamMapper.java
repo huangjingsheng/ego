@@ -24,6 +24,8 @@ public interface TbItemParamMapper {
     
     //@Select("select a.*,b.name from tb_item_param as a inner join tb_item_cat as b on a.item_cat_id = b.id")
     List<TbItemParam> selAll();
+    
+    TbItemParam selByCatId();
 
     TbItemParam selectByPrimaryKey(Long id);
 

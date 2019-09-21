@@ -27,5 +27,22 @@ public class TbItemParamDubboServiceImpl implements TbItemParamDubboService{
 		return eu;
 	}
 	
+	@Override
+	public boolean delByIds(String ids) throws Exception {
+		String[] id = ids.split(",");
+		int index = 0;
+		for(int i=0;i<id.length;i++) {
+			index += tbItemParamMapper.deleteByPrimaryKey(Long.parseLong(id[i]));
+		}
+		if(index==id.length) {
+			return true;
+		}else {
+			throw new Exception("删除失败，可能原因：数据已经不存在");
+		}
+		
+	}
+	
+	
+	
 
 }

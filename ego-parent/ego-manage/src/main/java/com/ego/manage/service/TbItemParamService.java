@@ -10,4 +10,6 @@ public interface TbItemParamService {
 	 * @return
 	 */
 	EasyUIDataGrid show(int page,int rows);
+	
+	boolean delByIds(String ids) throws Exception;
 }

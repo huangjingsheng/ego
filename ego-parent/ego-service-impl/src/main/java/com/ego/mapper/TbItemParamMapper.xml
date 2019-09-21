@@ -74,6 +74,9 @@
   <sql id="Blob_Column_List" >
     param_data
   </sql>
+  <select id="selByCatId" resultMap="ResultMapWithBLOBs" parameterType="com.ego.pojo.TbItemParamExample">
+  select id,item_cat_id,param_data
+  </select>
   <select id="selectByExampleWithBLOBs" resultMap="ResultMapWithBLOBs" parameterType="com.ego.pojo.TbItemParamExample" >
     select
     <if test="distinct" >
