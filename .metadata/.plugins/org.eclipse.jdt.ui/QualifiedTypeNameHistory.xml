@@ -17,7 +17,13 @@
 <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
 <fullyQualifiedTypeName name="com.ego.dubbo.service.TbItemParamDubboService"/>
 <fullyQualifiedTypeName name="com.ego.commons.pojo.EasyUIDataGrid"/>
-<fullyQualifiedTypeName name="com.ego.pojo.TbItemParam"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+<fullyQualifiedTypeName name="com.ego.commons.pojo.EgoResult"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="com.ego.pojo.TbItemParam"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.ego.mapper.TbItemParamItemMapper"/>
+<fullyQualifiedTypeName name="com.ego.pojo.TbItemParamItem"/>
 </qualifiedTypeNameHistroy>

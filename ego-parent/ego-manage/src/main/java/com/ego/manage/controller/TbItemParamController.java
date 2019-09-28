@@ -1,14 +1,19 @@
 package com.ego.manage.controller;
 
+
+import java.util.Date;
+
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.ego.commons.pojo.EasyUIDataGrid;
 import com.ego.commons.pojo.EgoResult;
 import com.ego.manage.service.TbItemParamService;
+import com.ego.pojo.TbItemParam;
 
 @Controller
 public class TbItemParamController {
@@ -38,4 +43,23 @@ public class TbItemParamController {
 		
 		return er;
 	}
+	
+	@RequestMapping("item/param/query/itemcatid/{catId}")
+	@ResponseBody
+	public EgoResult show(@PathVariable long catId) {
+		return tbItemParamService.show(catId);
+	}
+	
+	
+	@RequestMapping("item/param/save/{catId}")
+	@ResponseBody
+	public EgoResult insert(TbItemParam t, @PathVariable long catId) {
+		t.setItemCatId(catId);
+		Date date = new Date();
+		t.setUpdated(date);
+		t.setCreated(date);
+		return tbItemParamService.insert(t);
+	}
+	
+	
 }

@@ -3,6 +3,7 @@ package com.ego.dubbo.service;
 import com.ego.commons.pojo.EasyUIDataGrid;
 import com.ego.pojo.TbItem;
 import com.ego.pojo.TbItemDesc;
+import com.ego.pojo.TbItemParamItem;
 
 public interface TbItemDubboService {
 	/**
@@ -32,5 +33,5 @@ public interface TbItemDubboService {
 	 * @param desc
 	 * @return
 	 */
-	int insTbItemDesc(TbItem tbItem,TbItemDesc desc)  throws Exception;
+	int insTbItemDesc(TbItem tbItem,TbItemDesc desc,TbItemParamItem tbItemParamItem)  throws Exception;
 }

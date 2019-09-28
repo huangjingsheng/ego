@@ -1,8 +1,11 @@
 ##ignore this file##
 .classpath
 */target/
+/target/
 
 
 ##class file##
 *.class
 *.jar
+/.metadata/
+/.recommenders/

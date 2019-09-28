@@ -5,14 +5,15 @@ import java.util.List;
 import javax.annotation.Resource;
 
 import com.ego.commons.pojo.EasyUIDataGrid;
+import com.ego.commons.pojo.EgoResult;
 import com.ego.dubbo.service.TbItemParamDubboService;
 import com.ego.mapper.TbItemParamMapper;
 import com.ego.pojo.TbItemParam;
-import com.ego.pojo.TbItemParamExample;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 
 public class TbItemParamDubboServiceImpl implements TbItemParamDubboService{
+
 	@Resource
 	private TbItemParamMapper tbItemParamMapper;
 	@Override
@@ -28,6 +29,11 @@ public class TbItemParamDubboServiceImpl implements TbItemParamDubboService{
 	}
 	
 	@Override
+	public TbItemParam selByCatId(long catId) {		
+		return tbItemParamMapper.selByCatId1(catId);
+	}
+
+	@Override
 	public boolean delByIds(String ids) throws Exception {
 		String[] id = ids.split(",");
 		int index = 0;
@@ -41,6 +47,18 @@ public class TbItemParamDubboServiceImpl implements TbItemParamDubboService{
 		}
 		
 	}
+	
+	@Override
+	public boolean insTbItemParam(TbItemParam t) {
+		// TODO Auto-generated method stub
+		int i = tbItemParamMapper.insert(t);
+		if(i>0) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+
 	
 	
 	

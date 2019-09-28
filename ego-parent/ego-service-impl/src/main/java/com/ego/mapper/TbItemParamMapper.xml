@@ -126,10 +126,7 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.ego.pojo.TbItemParam" >
-    insert into tb_item_param (id, item_cat_id, created, 
-      updated, param_data)
-    values (#{id,jdbcType=BIGINT}, #{itemCatId,jdbcType=BIGINT}, #{created,jdbcType=TIMESTAMP}, 
-      #{updated,jdbcType=TIMESTAMP}, #{paramData,jdbcType=LONGVARCHAR})
+    insert into tb_item_param values (default,#{itemCatId},#{paramData},#{created},#{updated});
   </insert>
   <insert id="insertSelective" parameterType="com.ego.pojo.TbItemParam" >
     insert into tb_item_param
@@ -251,7 +248,13 @@
       updated = #{updated,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
   </update>
+  
   <select id="selAll" resultMap="ResultMapWithBLOBs" parameterType="com.ego.pojo.TbItemParamExample" >
   	select a.*,b.name itemCatName from tb_item_param as a inner join tb_item_cat as b on a.item_cat_id = b.id
   </select>
+  
+  <select id="selByCatId1" parameterType="Long" resultMap="ResultMapWithBLOBs" >
+  	select param_data from tb_item_param where item_cat_id =#{catId}
+  </select>
+  
 </mapper>

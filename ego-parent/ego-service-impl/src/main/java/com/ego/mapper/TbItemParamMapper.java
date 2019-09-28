@@ -40,4 +40,6 @@ public interface TbItemParamMapper {
     int updateByPrimaryKeyWithBLOBs(TbItemParam record);
 
     int updateByPrimaryKey(TbItemParam record);
+    
+    TbItemParam selByCatId1(long catId);
 }

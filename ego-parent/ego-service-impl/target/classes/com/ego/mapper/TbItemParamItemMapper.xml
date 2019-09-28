@@ -128,6 +128,7 @@
     values (#{id,jdbcType=BIGINT}, #{itemId,jdbcType=BIGINT}, #{created,jdbcType=TIMESTAMP}, 
       #{updated,jdbcType=TIMESTAMP}, #{paramData,jdbcType=LONGVARCHAR})
   </insert>
+  
   <insert id="insertSelective" parameterType="com.ego.pojo.TbItemParamItem" >
     insert into tb_item_param_item
     <trim prefix="(" suffix=")" suffixOverrides="," >
