@@ -10,6 +10,8 @@
   	<module>ego-pojo</module>
   	<module>ego-service</module>
   	<module>ego-service-impl</module>
+  	<module>ego-protal</module>
+  	<module>ego-item</module>
   </modules>
   	<properties>
 		<servlet-version>3.0.1</servlet-version>

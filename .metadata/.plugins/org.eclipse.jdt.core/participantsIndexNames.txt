@@ -1,3 +1,11 @@
 INDEX VERSION 1.130
+D:\gitworkspace\ego\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3035435532.index
+\ego-protal\src\main\java
+D:\gitworkspace\ego\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3927345382.index
+\ego-protal\src\main\java
 D:\gitworkspace\ego\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1792093284.index
 \ego-manage
+D:\gitworkspace\ego\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1194110961.index
+\ego-item\src\main\java
+D:\gitworkspace\ego\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3254615226.index
+\ego-protal\src\main\java

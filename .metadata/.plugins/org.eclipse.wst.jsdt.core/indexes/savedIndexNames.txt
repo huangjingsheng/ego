@@ -1,7 +1,4 @@
 INDEX VERSION 1.4+D:\gitworkspace\ego\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-3235345969.index
-1073506164.index
 620641524.index
-1278466883.index
-3680536196.index
-3412619224.index
+1524225600.index
+824301887.index

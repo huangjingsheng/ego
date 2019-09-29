@@ -2,19 +2,14 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.huishoubao"/>
 			<item value="com.ego"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="flower"/>
-			<item value="ego-service-impl"/>
+			<item value="ego-item"/>
 			<item value="ego-parent"/>
-			<item value="ego-service"/>
-			<item value="ego-pojo"/>
-			<item value="ego-manage"/>
-			<item value="ego-commons"/>
+			<item value="ego-protal"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -65,6 +60,8 @@
 	</section>
 	<section name="MavenModuleWizardParentPage">
 		<list key="moduleName">
+			<item value="ego-item"/>
+			<item value="ego-protal"/>
 			<item value="ego-service-impl"/>
 			<item value="ego-service"/>
 			<item value="ego-pojo"/>
@@ -94,10 +91,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="org.ego.item"/>
 		</list>
 		<list key="groupId">
+			<item value="com.ego"/>
 		</list>
 		<list key="artifactId">
+			<item value="ego-item"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

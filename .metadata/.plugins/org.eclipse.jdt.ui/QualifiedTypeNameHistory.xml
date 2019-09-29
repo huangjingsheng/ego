@@ -12,9 +12,7 @@
 <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactory"/>
 <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
 <fullyQualifiedTypeName name="com.huishoubao.pojo.Flower"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.huishoubao.mapper.FlowerMapper"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
 <fullyQualifiedTypeName name="com.ego.dubbo.service.TbItemParamDubboService"/>
 <fullyQualifiedTypeName name="com.ego.commons.pojo.EasyUIDataGrid"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
@@ -26,4 +24,6 @@
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="com.ego.mapper.TbItemParamItemMapper"/>
 <fullyQualifiedTypeName name="com.ego.pojo.TbItemParamItem"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
 </qualifiedTypeNameHistroy>
