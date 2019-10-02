@@ -86,6 +86,13 @@
       order by ${orderByClause}
     </if>
   </select>
+  <!--通过parent_id和未被删除的查询  -->
+  <select id="selectByParentId" resultMap="BaseResultMap" parameterType="java.lang.Long">
+  	select id,parent_id,name,status,sort_order,is_parent from tb_content_category where parent_id=#{pid} and status =1;
+  </select>
+  
+
+  
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
     select 
     <include refid="Base_Column_List" />
@@ -164,6 +171,22 @@
         #{updated,jdbcType=TIMESTAMP},
       </if>
     </trim>
+  </insert>
+  <!-- 新增一条数据并返回自增的id -->
+  <insert id="insTbContentCategory" parameterType="com.ego.pojo.TbContentCategory">
+  	<selectKey resultType="java.lang.Long" keyProperty="id" order="AFTER">
+  		SELECT LAST_INSERT_ID()
+  	</selectKey>
+  	insert into tb_content_category values(
+  	default,
+  	#{parentId},
+  	#{name},
+  	#{status},
+  	#{sortOrder},
+  	#{isParent},
+  	#{created},
+  	#{updated}
+  	);
   </insert>
   <select id="countByExample" parameterType="com.ego.pojo.TbContentCategoryExample" resultType="java.lang.Integer" >
     select count(*) from tb_content_category
@@ -255,4 +278,34 @@
       updated = #{updated,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
   </update>
+  
+  <select id="selIsParent" parameterType="java.lang.Long" resultType="java.lang.Integer">
+  	select is_parent from tb_content_category where id =#{pid}
+  </select>
+  
+  <update id="updIsParent" parameterType="com.ego.pojo.TbContentCategory">
+  	update tb_content_category set is_parent = #{isParent},updated=#{updated} where id =#{id}
+  </update>
+  
+  <update id="updName" parameterType="com.ego.pojo.TbContentCategory">
+  	update tb_content_category set name = #{name},updated=#{updated} where id =#{id}
+  </update>
+  
+  <update id="upStatus" parameterType="com.ego.pojo.TbContentCategory">
+  		update tb_content_category set status = 2,updated=#{updated} where id =#{id}
+  </update>
+  
+  <select id="countChild" parameterType="com.ego.pojo.TbContentCategory" resultType="java.lang.Integer">
+  		select count(*) from tb_content_category where parent_id = #{parentId} and status=1
+  </select>
+  
+  <select id="selParentId" parameterType="com.ego.pojo.TbContentCategory" resultType="java.lang.Long" >
+  	select parent_id from tb_content_category where id = #{id}
+  </select>
+  
+    <!-- 通过parent_id查询分类名称 -->
+  <select id="selCatNameByParentId" resultType="java.lang.String" parameterType="java.lang.Long" >
+  	select name from tb_content_category where parent_id=#{pid} and status =1;
+  </select>
+  
 </mapper>
